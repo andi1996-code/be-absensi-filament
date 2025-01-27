@@ -40,7 +40,7 @@ class UserResource extends Resource
                     ->numeric(),
                 Forms\Components\Radio::make('role')
                     ->options([
-                        'user' => 'User',
+                        'user' => 'Karyawan',
                         'admin' => 'Admin',
                     ])
                     ->default('user'),
@@ -69,7 +69,7 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make('role')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('phone')
-                    ->numeric()
+                    ->searchable()
                     ->sortable(),
             ])
             ->filters([

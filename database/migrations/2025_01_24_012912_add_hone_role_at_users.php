@@ -27,6 +27,11 @@ return new class extends Migration
             //
             $table->dropColumn('role');
             $table->dropColumn('phone');
+            $table->dropColumn('potition');
+            $table->dropColumn('department');
+            $table->dropColumn('face_embedding');
+            $table->dropColumn('image_url');
+            $table->dropColumn('fcm_token');
         });
     }
 };
